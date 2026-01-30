@@ -1,0 +1,67 @@
+body {
+  font-family: system-ui, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #0b1220;
+  color: white;
+}
+
+.topbar {
+  padding: 16px;
+  background: #111a2e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 90px);
+  gap: 12px;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  width: 90px;
+  height: 90px;
+  border-radius: 14px;
+  background: #1a2747;
+  display: grid;
+  place-items: center;
+  font-size: 40px;
+  user-select: none;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.card:active {
+  transform: scale(0.98);
+}
+
+.card.flipped,
+.card.matched {
+  background: #243760;
+  cursor: default;
+}
+
+.status {
+  text-align: center;
+  padding-bottom: 24px;
+  opacity: 0.9;
+}
